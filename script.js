@@ -172,3 +172,4 @@ console.log(n);
 //slice() selects the part of an array and returns the new array
 const subArray = n.slice(2,4);
 console.log(subArray);
+
