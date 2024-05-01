@@ -1,40 +1,46 @@
-//Nested Function
-//You may nest a function within
-// another function. The nested (inner)
-// function is private to its containing
-// (outer) function.
-function addSquares(a,b){
+// Function to add the squares of two numbers
+function addSquares(a, b) {
+
+    // Call the square function for both input parameters
     const sa = square(a);
     const sb = square(b);
 
-    function square(num){
-        //we can only call square function in addSquares function because it is nested
+    // Nested function to calculate the square of a number
+    // This function is private to the addSquares function
+    function square(num) {
+        // Return the square of the input number
         return num * num;
     }
+
+    // Return the sum of the squares
     return sa + sb;
-
 }
-console.log(addSquares(3,4));
 
-//Arrow Functions
-//The arrow function is one of the features introduced in the ES6 version of JavaScript. 
-// It allows you to create functions in a cleaner way compared
-// to regular functions. Here are some of
-// the valid syntax for arrow function:
+// Log the result of adding the squares of 3 and 4
+console.log(addSquares(3, 4));
 
-const greet = ()=>{
+// Arrow function to print "Hello World"
+const greet = () => {
     console.log("Hello World");
 };
+
+// Call the greet function
 greet();
 
-//to pass parameter
-const greet1 = (count)=>{
+// Arrow function to print "Hello World" a specified number of times
+const greet1 = (count) => {
     for (let i = 0; i < count; i++) 
         console.log("Hello World", count);
 };
+
+// Call the greet1 function with a parameter of 10
 greet1(10);
 
+// Arrow function to calculate the square of a number
 const square1 = (num) => {
+    // Return the square of the input number
     return num * num;
-}
+};
+
+// Log the square of 3 using the square1 function
 console.log(square1(3));
