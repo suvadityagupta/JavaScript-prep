@@ -22,4 +22,8 @@ function fillDataInCard(cardClone , article){
     const newsTitle = cardClone.querySelectior('#news-title');
     const newsSource = cardClone.querySelectior('#news-source');
     const newsDesc = cardClone.querySelectior('#news-desc');
+    newsImg.src = article.urlToImage;
+    newsTitle.innerHTML = article.title;               
+    newsTitle.innerHTML = article.description;
+
 }
