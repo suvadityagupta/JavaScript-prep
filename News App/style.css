@@ -46,14 +46,14 @@ ul {
 }
 
 nav {
-    background-color: #eff8fc;
+    background-color: #00364d;
     box-shadow: 0 0 4px #bbd0e2;
     position: fixed;
     top: 0;
     z-index: 99;
     left: 0;
     right: 0;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .main-nav {
@@ -74,7 +74,7 @@ nav {
 }
 
 .hover-link:hover {
-    color: blue;
+    color: rgb(118, 193, 255);
 }
 
 .hover-link:active {
